@@ -202,9 +202,9 @@ public class InitiativeTracker implements CommandExecutor {
 						
 						Location playerLocation = player.getLocation();
 						for (Player p : players) {
-							
-							player.sendMessage("[Init]     Initiative Order");
+
 							if (p.getLocation().distance(playerLocation) < 60) {
+								p.sendMessage("[Init]     Initiative Order");
 								for (Tuple<String, Float> n : ll) {
 									p.sendMessage("[Init]     " + n.x + " - " + String.valueOf(n.y));
 								}
