@@ -1,0 +1,16 @@
+name: 'ToT-Initiative'
+main: 'io.github.moonlitlilacs.ToTInitiative.ToTInitiative'
+version: '1.0'
+description: 'A Tales of Toril Initiative Tracker'
+author: 'MoonlitLilacs'
+website: 'https://talesoftoril.com'
+api-version: '1.18'
+commands:
+  init:
+    description: 'Creates an initiative tracker.'
+    usage: '/init create'
+    permission: 'totinitiative.init'
+    permission-message: 'You do not have permission to use this command.'
+permissions:
+  totinitiative.init:
+    description: 'Allows a player to create an initiative tracker'
